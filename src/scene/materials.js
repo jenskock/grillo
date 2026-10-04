@@ -19,11 +19,12 @@ function createTextureLoader(renderer) {
 }
 
 function pbrSet(load, folder, repeat) {
+  const root = import.meta.env.BASE_URL
   return {
-    map: load(`/textures/${folder}/diff.jpg`, { color: true, repeat }),
-    normalMap: load(`/textures/${folder}/nor.jpg`, { repeat }),
-    roughnessMap: load(`/textures/${folder}/rough.jpg`, { repeat }),
-    aoMap: load(`/textures/${folder}/ao.jpg`, { repeat }),
+    map: load(`${root}textures/${folder}/diff.jpg`, { color: true, repeat }),
+    normalMap: load(`${root}textures/${folder}/nor.jpg`, { repeat }),
+    roughnessMap: load(`${root}textures/${folder}/rough.jpg`, { repeat }),
+    aoMap: load(`${root}textures/${folder}/ao.jpg`, { repeat }),
   }
 }
 

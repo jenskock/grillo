@@ -179,7 +179,7 @@ export function createScene3D(container) {
   composer.addPass(gtao)
   composer.addPass(new OutputPass())
 
-  new HDRLoader().load('/hdr/env.hdr', (hdr) => {
+  new HDRLoader().load(`${import.meta.env.BASE_URL}hdr/env.hdr`, (hdr) => {
     hdr.mapping = THREE.EquirectangularReflectionMapping
     scene.environment = hdr
     scene.environmentIntensity = 0.6

@@ -2,6 +2,8 @@
 
 Interaktiver Gartengrundriss für Pestalozzistraße 28, Münster.
 
+**Live:** [https://jenskock.github.io/grillo/](https://jenskock.github.io/grillo/)
+
 ## Start
 
 ```bash
@@ -9,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Vite öffnet die App mit Hot Reload unter [http://localhost:5173](http://localhost:5173).
+Vite öffnet die App mit Hot Reload unter [http://localhost:5173/grillo/](http://localhost:5173/grillo/).
 
 ## Ansicht
 
